@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# Husky pre-commit hook
+# Runs linting and formatting before commits
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx lint-staged

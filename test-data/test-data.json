@@ -1,0 +1,152 @@
+{
+  "testUsers": [
+    {
+      "id": 1,
+      "name": "QA Test User",
+      "email": "qa.test@automationexercise.com",
+      "password": "QATestPass123!",
+      "role": "user",
+      "phone": "1234567890",
+      "address": "123 Test Street",
+      "country": "United States",
+      "state": "California",
+      "city": "San Francisco",
+      "zipcode": "94105"
+    }
+  ],
+  "invalidCredentials": [
+    {
+      "email": "invalid@automationexercise.com",
+      "password": "wrongpassword"
+    },
+    {
+      "email": "nonexistent@automationexercise.com",
+      "password": "password123"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Blue Top",
+      "price": 500,
+      "category": "Women",
+      "brand": "Polo"
+    },
+    {
+      "id": 2,
+      "name": "Men Tshirt",
+      "price": 400,
+      "category": "Men",
+      "brand": "H&M"
+    },
+    {
+      "id": 3,
+      "name": "Sleeveless Dress",
+      "price": 1000,
+      "category": "Women",
+      "brand": "Madame"
+    },
+    {
+      "id": 4,
+      "name": "Stylish Dress",
+      "price": 1500,
+      "category": "Women",
+      "brand": "Mast & Harbour"
+    },
+    {
+      "id": 5,
+      "name": "Winter Top",
+      "price": 600,
+      "category": "Women",
+      "brand": "BABYHUG"
+    }
+  ],
+  "testScenarios": {
+    "login": {
+      "description": "Test login functionality",
+      "steps": [
+        "Navigate to login page",
+        "Enter email and password",
+        "Click login button",
+        "Verify logged in as message"
+      ]
+    },
+    "signup": {
+      "description": "Test signup functionality",
+      "steps": [
+        "Navigate to login page",
+        "Enter name and email",
+        "Click signup button",
+        "Fill account information",
+        "Verify account created"
+      ]
+    },
+    "addToCart": {
+      "description": "Test add product to cart",
+      "steps": [
+        "Navigate to products page",
+        "Select a product",
+        "Click add to cart",
+        "Verify product in cart"
+      ]
+    },
+    "checkout": {
+      "description": "Test checkout process",
+      "steps": [
+        "Add products to cart",
+        "Navigate to cart",
+        "Proceed to checkout",
+        "Fill delivery address",
+        "Enter payment details",
+        "Place order"
+      ]
+    },
+    "accountDeletion": {
+      "description": "Test account deletion",
+      "steps": [
+        "Login to account",
+        "Click delete account",
+        "Verify account deleted message",
+        "Click continue button"
+      ]
+    }
+  },
+  "brands": [
+    "Polo",
+    "H&M",
+    "Madame",
+    "Mast & Harbour",
+    "BABYHUG",
+    "Allen Solly Junior",
+    "Kookie Kids",
+    "Biba"
+  ],
+  "categories": [
+    {
+      "name": "Women",
+      "subcategories": ["Dress", "Tops", "Saree"]
+    },
+    {
+      "name": "Men",
+      "subcategories": ["Shirts", "T-shirts", "Jeans"]
+    },
+    {
+      "name": "Kids",
+      "subcategories": ["Tops", "Dresses", "Clothing"]
+    }
+  ],
+  "paymentData": {
+    "testCard": {
+      "cardNumber": "4111111111111111",
+      "cvv": "123",
+      "expiry": "12/25",
+      "nameOnCard": "QA Test User"
+    }
+  },
+  "contactUsData": {
+    "name": "QA Test Engineer",
+    "email": "qa.test@automationexercise.com",
+    "subject": "Testing Contact Form",
+    "message": "This is a test message from the automation framework."
+  }
+}
